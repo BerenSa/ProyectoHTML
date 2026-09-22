@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fútbol</title>
+
   <style>
     * {
       margin: 0;
@@ -14,6 +15,9 @@
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
       background: #eef2f7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     header {
@@ -31,11 +35,62 @@
       text-transform: uppercase;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+    }
+
+    .imagenes {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .imagenes img {
+      width: 250px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 3px solid #0b3fa0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background: #092b70;
+      color: white;
+      padding: 25px;
+      text-align: center;
+      border-top: 4px solid #ffd700;
+    }
+
+    footer p {
+      color: #dbe7ff;
+    }
   </style>
 </head>
+
 <body>
+
   <header>
-    <h1>Fútbol</h1>
+    <h1>Mundial 2026</h1>
   </header>
+
+  <main>
+
+    <div class="imagenes">
+      <img src="inglaterra.jpg" alt="Balón de fútbol">
+      <img src="españa.jpg" alt="Estadio de fútbol">
+      <img src="argentina.jpg" alt="Trofeo de fútbol">
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Mundial de Fútbol</p>
+  </footer>
+
 </body>
 </html>
+```
